@@ -102,12 +102,21 @@ body{
 header{
     padding: 20px;
     margin-bottom:10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 10px #e4dcdc;
+    background-color: var(--section-background)
+    
 }
 
 header .container{
     display:flex;
     align-items:center;
     justify-content:space-around;
+    position: relative;
 }
 
 header .container .logo{
@@ -118,6 +127,9 @@ header .container .logo{
 
 header .container .links{
     position:relative;
+    display: flex;
+    align-items:center;
+    
 }
 
 header .container .links .icon{
@@ -125,7 +137,8 @@ header .container .links .icon{
     flex-wrap:wrap;
     justify-content:flex-end;
     width:30px;
-    cursor:pointer
+    cursor:pointer;
+    transition: all .3s linear
 }
 
 header .container .links .icon span{
@@ -147,6 +160,14 @@ header .container .links .icon span:last-child{
     width:100%;
 }
 
+header .container .links .close {
+    color: var(--main-color);
+    font-size:35px;
+    display: none;
+    transition: all .3s linear;
+    cursor: pointer
+}
+
 header .container .links .nav{
     list-style:none;
     background-color:#f6f6f6;
@@ -154,11 +175,11 @@ header .container .links .nav{
     right:0;
     top:calc(100% + 20px);
     width:200px;
-    display:none; /* On Hover we display the nav links */
+    display:none; /* On Click display the nav links */
     z-index:1
 }
 
-header .container .links:hover .nav{
+header .container .links .show-nav{
     display:block
 }
 
@@ -198,7 +219,7 @@ header .container .links  .nav li:not(:last-child){
     background-repeat:no-repeat;
     background-size:100%;
     background-position:center;
-    height:calc(100vh - 110px);
+    height:calc(100vh);
     text-align:center;
     position:relative;
 

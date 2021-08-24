@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agency Template</title>
-    <link rel="stylesheet" href="css/agency.css">
+    <title>Agency</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,6 +23,10 @@
                     <span></span>
                     <span></span>
                     <span></span>
+                </span>
+
+                <span class="close">
+                    <i class="fas fa-times"></i>
                 </span>
 
                 <ul class="nav">
@@ -64,7 +68,7 @@
 
     <!-- Start Features-->
 
-    <div class="features" id="home">
+    <div class="features" id="home" onclick="closeNav()">
         <div class="container">
             <div class="feat">
                 <i class="fas fa-magic fa-3x"></i>
@@ -88,7 +92,7 @@
 
     <!-- Start Services -->
 
-    <div class="services" id="services">
+    <div class="services" id="services" onclick="closeNav()">
         <div class="container">
             <h1 class="special-heading">Services</h1>
             <p>Don't be busy, be Productive</p>
@@ -142,7 +146,7 @@
 
     <!-- Start Portfolio -->
 
-    <div class="portfolio">
+    <div class="portfolio" onclick="closeNav()">
         <div class="container">
             <div class="special-heading">Portfolio</div>
             <p>If you do it right, it will be last forever.</p>
@@ -175,7 +179,7 @@
 
     <!-- Start About -->
 
-    <div class="about" id="about">
+    <div class="about" id="about" onclick="closeNav()">
         <div class="container">
             <div class="special-heading">About</div>
             <p>Less is more work</p>
@@ -199,7 +203,7 @@
 
     <!--Start Contact-->
     
-    <div class="contact" id="contact">
+    <div class="contact" id="contact" onclick="closeNav()">
         <div class="container">
             <div class="special-heading">Contact</div>
             <p>We are born to create</p>
@@ -220,10 +224,11 @@
 
     <!--Start Footer-->
 
-    <div class="footer">
+    <div class="footer" onclick="closeNav()">
         <p>&copy; 2021-<span>Nour</span>, All Right Reserved</p>
     </div>
     <!--End Footer-->
 
+    <script src="js/index.js"></script>
 </body>
 </html>
