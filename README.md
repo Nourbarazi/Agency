@@ -5,4 +5,4 @@ Inspired from [Leon - PSD Agency Template on Graphberry](https://www.graphberry.
 
 ### Screenshot
 
-![Agency Design](Graphberry/Template.png)
+![Agency Design](Screenshot/Template.png)
