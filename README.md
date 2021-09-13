@@ -3,6 +3,6 @@
 
 Inspired from [Leon - PSD Agency Template on Graphberry](https://www.graphberry.com/item/leon-psd-agency-template)
 
-### Design
+### Screenshot
 
 ![Agency Design](Graphberry/Template.png)
